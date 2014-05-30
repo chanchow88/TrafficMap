@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <group android:id="@+id/popmenu"
+           android:checkableBehavior="none"
+           android:visible="true"
+           android:enabled="true"
+           	>
+    <item android:id="@+id/mylocation"
+          android:title="My Location"
+          android:onClick="onLocationChanged()"
+          android:orderInCategory="2" />
+    <item android:id="@+id/searchLoc"
+          android:title="Search"
+          android:onClick="onSearchLocation()"
+          android:orderInCategory="3" />
+    <item android:id="@+id/directions"
+          android:title="Directions"
+          android:onClick="onGetDirections()"
+          android:orderInCategory="1" />
+    <item android:id="@+id/exit"
+          android:title="Exit"
+          android:onClick="onExit()"
+          android:orderInCategory="4" />
+        
+    	<item />
+    </group>
+
+</menu>

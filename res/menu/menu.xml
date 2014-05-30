@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <group android:id="@+id/popmenu"
+           android:checkableBehavior="none"
+           android:visible="true"
+           android:enabled="true"
+           	>
+    <item android:id="@+id/mylocation"
+          android:title="My Location"
+          android:onClick="onLocationChanged()"
+          android:orderInCategory="2" />
+    <item android:id="@+id/searchLoc"
+          android:title="Search"
+          android:onClick="onSearchLocation()"
+          android:orderInCategory="3" />
+    <item android:id="@+id/directions"
+          android:title="Directions"
+          android:onClick="Directions()"
+          android:orderInCategory="1" />
+    <item android:id="@+id/exit"
+          android:title="Exit"
+          android:onClick="onExit()"
+          android:orderInCategory="8" />
+    <item android:id="@+id/trafficview"
+          android:title="Traffic"
+          android:onClick="onTrafficView()"
+          android:orderInCategory="0" />
+    <item android:id="@+id/satellite"
+          android:title="Satellite"
+          android:onClick="onSatelliteView()"
+          android:orderInCategory="4"
+           />
+    <item android:id="@+id/streetView"
+          android:title="Street"
+          android:onClick="onStreetView()"
+          android:orderInCategory="5"
+           />
+    <item android:id="@+id/clear"
+          android:title="Clear Map"
+          android:onClick="clearmap()"
+          android:orderInCategory="6"
+           />
+    <item android:id="@+id/customtraffic"
+          android:title="Monongalia Traffic"
+          android:onClick="monongaliatraffic()"
+          android:orderInCategory="7"
+           />
+
+    </group>
+
+</menu>
